@@ -1,0 +1,2859 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>د. أبو اليقظان باكلي | البوابة التعريفية الرسمية • Dr. Aboulyakdane BAKELLI</title>
+  <meta name="description" content="البوابة الرسمية لـ د. أبو اليقظان باكلي - مدير حاضنة الأعمال TECHINNOV بجامعة العلوم والتكنولوجيا هواري بومدين (USTHB)، أستاذ محاضر وباحث في الجيولوجيا، مهندس ابتكار وتطوير منظومات ريادة الأعمال.">
+  <meta name="author" content="Dr. Aboulyakdane BAKELLI">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="د. أبو اليقظان باكلي | مدير حاضنة TECHINNOV - USTHB">
+  <meta property="og:description" content="أستاذ محاضر وباحث • مدير حاضنة الأعمال TECHINNOV بجامعة العلوم والتكنولوجيا هواري بومدين (USTHB)">
+  <meta property="og:image" content="portrait.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Sovereign Emerald & Official State Gold Tokens */
+      --bg-deep: #030906;
+      --bg-emerald-dark: #071912;
+      --surface-glass: rgba(9, 28, 19, 0.85);
+      --surface-card: linear-gradient(180deg, rgba(15, 42, 29, 0.94) 0%, rgba(5, 14, 10, 0.98) 100%);
+      --surface-card-hover: linear-gradient(180deg, rgba(22, 60, 42, 0.96) 0%, rgba(8, 22, 16, 0.99) 100%);
+      --gold: #D4AF37;
+      --gold-bright: #FFF3B8;
+      --gold-pale: #F5E6A3;
+      --gold-dark: #9B7415;
+      --gold-muted: #C8A656;
+      --crimson-seal: #A91B22;
+      --crimson-glow: rgba(169, 27, 34, 0.45);
+      --text-white: #FFFFFF;
+      --text-light: #DCE5E0;
+      --text-dim: #9EB0A6;
+      --edge-gold: 1px solid rgba(212, 175, 55, 0.38);
+      --edge-gold-strong: 1px solid rgba(245, 230, 163, 0.65);
+      
+      /* Fonts */
+      --font-ar-serif: 'Amiri', 'Cairo', serif;
+      --font-ar-sans: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-latin: 'Montserrat', sans-serif;
+      
+      /* Radii & Curves */
+      --r-lg: 20px;
+      --r-md: 14px;
+      --r-sm: 8px;
+      --r-pill: 999px;
+      --ease-luxury: cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: var(--bg-deep);
+      color: var(--text-white);
+      font-family: var(--font-ar-sans);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-height: 100dvh;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 50% 45%, rgba(13, 56, 37, 0.38) 0%, transparent 70%),
+        var(--bg-deep);
+      overflow-x: hidden;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    /* Ambient Canvas */
+    #particles-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       LUXURY SOVEREIGN PRELOADER
+       ========================================================================== */
+    .preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--bg-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.7s ease;
+    }
+
+    .preloader.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.04);
+      filter: blur(6px);
+      pointer-events: none;
+    }
+
+    .preloader-backdrop {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.22) 0%, rgba(7, 25, 18, 0.65) 50%, var(--bg-deep) 90%),
+        radial-gradient(circle at 20% 80%, rgba(13, 56, 37, 0.3) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .preloader-inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 24px;
+      text-align: center;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    .preloader-emblem-wrap {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .preloader-glow-aura {
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.45) 0%, rgba(255, 243, 184, 0.15) 45%, transparent 70%);
+      filter: blur(10px);
+      animation: auraPulse 2.4s ease-in-out infinite;
+    }
+
+    .preloader-ring-pulse {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      animation: ripplePulse 2s ease-out infinite;
+    }
+
+    .preloader-ring-outer {
+      position: absolute;
+      inset: 2px;
+      border-radius: 50%;
+      border: 2px dashed rgba(212, 175, 55, 0.7);
+      animation: spinClockwise 12s linear infinite;
+    }
+
+    .preloader-ring-inner {
+      position: absolute;
+      inset: 12px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      border-top-color: var(--gold-bright);
+      border-right-color: var(--gold);
+      animation: spinCounter 1.8s cubic-bezier(0.68, -0.25, 0.27, 1.25) infinite;
+    }
+
+    .preloader-center-seal {
+      position: relative;
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, #153e2b 0%, #06150f 100%);
+      border: 1px solid rgba(255, 243, 184, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+    }
+
+    .preloader-seal-svg {
+      width: 24px;
+      height: 24px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+    }
+
+    .preloader-identity {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .preloader-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      font-family: var(--font-ar-serif);
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .preloader-inst {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .preloader-bar-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .preloader-bar-track {
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 99px;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      position: relative;
+    }
+
+    .preloader-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #9B7415 0%, #D4AF37 50%, #FFF3B8 100%);
+      border-radius: 99px;
+      box-shadow: 0 0 12px rgba(255, 243, 184, 0.9);
+      transition: width 0.12s ease;
+    }
+
+    .preloader-status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+    }
+
+    .preloader-label {
+      color: var(--text-dim);
+      font-weight: 500;
+    }
+
+    .preloader-percent {
+      font-family: var(--font-latin);
+      font-weight: 700;
+      color: var(--gold-pale);
+    }
+
+    @keyframes auraPulse {
+      0%, 100% { transform: scale(0.95); opacity: 0.45; }
+      50% { transform: scale(1.15); opacity: 0.85; }
+    }
+
+    @keyframes ripplePulse {
+      0% { transform: scale(0.85); opacity: 0.8; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    @keyframes spinClockwise {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes spinCounter {
+      to { transform: rotate(-360deg); }
+    }
+
+    /* Portal Container */
+    .portal-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 480px;
+      margin-inline: auto;
+      padding: 18px 16px 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Top Language Bar */
+    .lang-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      background: rgba(8, 26, 18, 0.85);
+      color: var(--gold-muted);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      padding: 6px 18px;
+      border-radius: var(--r-pill);
+      font-family: var(--font-ar-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 36px;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: linear-gradient(135deg, #D4AF37 0%, #9E7818 100%);
+      color: #04100A;
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+    }
+
+    /* Sovereign Institutional Header */
+    .sovereign-header {
+      text-align: center;
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-lg);
+      padding: 16px 14px;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-crest {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 48px;
+      aspect-ratio: 368 / 278;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid var(--gold-pale);
+      margin-bottom: 12px;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), 0 4px 14px rgba(0, 0, 0, 0.85);
+      background: #000;
+      position: relative;
+    }
+
+    .header-crest::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 50%);
+      pointer-events: none;
+    }
+
+    .flag-crest-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .republic-ar {
+      font-family: var(--font-ar-serif);
+      font-size: 1.08rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .republic-en {
+      font-family: var(--font-latin);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      margin-top: 2px;
+      font-weight: 600;
+    }
+
+    .header-rule {
+      width: 60%;
+      height: 1px;
+      margin: 10px auto;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .org-title {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.35;
+    }
+
+    .org-sub {
+      font-size: 0.83rem;
+      color: var(--text-light);
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    .pillars-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      padding: 4px 16px;
+      border-radius: var(--r-pill);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: var(--gold-bright);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    /* ==========================================================================
+       HERO PORTRAIT & STRICT GOLD CONTAINER OVERLAY INSIDE PICTURE
+       ========================================================================== */
+    .hero-section {
+      width: 100%;
+    }
+
+    .hero-portrait-frame {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      margin-inline: auto;
+      /* Exact dimensions of portrait (682 x 1024) */
+      aspect-ratio: 682 / 1024;
+      container-type: inline-size;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: var(--edge-gold-strong);
+      box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(212, 175, 55, 0.25);
+      background: #040E09;
+      transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s ease;
+    }
+
+    .hero-portrait-frame::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -150%;
+      width: 70%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 243, 184, 0.14) 50%, transparent 100%);
+      transform: rotate(25deg);
+      pointer-events: none;
+      animation: portraitShimmer 5.5s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    @keyframes portraitShimmer {
+      0%, 70% { left: -150%; }
+      100% { left: 160%; }
+    }
+
+    .hero-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s var(--ease-luxury);
+    }
+
+    .hero-portrait-frame:hover .hero-img {
+      transform: scale(1.02);
+    }
+
+    /* Coordinates locked strictly to the black & gold box inside the portrait */
+    .picture-gold-box-content {
+      position: absolute;
+      top: 70.0%;
+      bottom: 11.2%;
+      left: 6.8%;
+      right: 6.8%;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1cqw 3cqw;
+      pointer-events: none;
+    }
+
+    .verified-mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.2cqw;
+      padding: 0.5cqw 2.6cqw;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.16);
+      border: 1px solid rgba(245, 230, 163, 0.45);
+      color: var(--gold-bright);
+      font-size: 2.35cqw;
+      font-weight: 700;
+      animation: badgePulse 3s infinite ease-in-out;
+    }
+
+    @keyframes badgePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.35); }
+      50% { box-shadow: 0 0 8px 1px rgba(255, 243, 184, 0.45); }
+    }
+      margin-bottom: 0.6cqw;
+      backdrop-filter: blur(4px);
+    }
+
+    .verified-mini-badge svg {
+      width: 2.8cqw;
+      height: 2.8cqw;
+      fill: var(--gold-bright);
+    }
+
+    .person-name-ar {
+      margin: 0;
+      font-family: var(--font-ar-serif);
+      font-size: 6.2cqw;
+      font-weight: 700;
+      line-height: 1.15;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF2B2 35%, #D4AF37 75%, #9E7614 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.95));
+    }
+
+    .person-name-en {
+      margin-top: 0.4cqw;
+      font-family: var(--font-latin);
+      font-size: 2.5cqw;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      color: var(--gold-pale);
+      text-transform: uppercase;
+    }
+
+    .gold-divider {
+      width: 44%;
+      height: 1px;
+      margin: 1cqw auto;
+      background: linear-gradient(90deg, transparent, var(--gold-bright), transparent);
+    }
+
+    .person-title {
+      margin: 0;
+      font-family: var(--font-ar-sans);
+      font-size: 3.05cqw;
+      font-weight: 700;
+      line-height: 1.32;
+      color: #FFFFFF;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
+      max-width: 96%;
+    }
+
+    /* Legal Authority Crimson/Gold Banner */
+    .authority-banner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      border-radius: var(--r-md);
+      background: linear-gradient(135deg, rgba(169, 27, 34, 0.94) 0%, rgba(105, 12, 18, 0.97) 100%);
+      border: 1px solid rgba(245, 230, 163, 0.55);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65);
+    }
+
+    .authority-banner-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--gold-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-bright);
+    }
+
+    .authority-banner-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .authority-banner-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .authority-banner-text strong {
+      font-size: 0.9rem;
+      color: #FFFFFF;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    .authority-banner-text span {
+      font-size: 0.77rem;
+      color: var(--gold-bright);
+      line-height: 1.35;
+    }
+
+    /* Executive Action Buttons */
+    .cta-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-executive {
+      width: 100%;
+      min-height: 52px;
+      padding: 12px 18px;
+      border-radius: var(--r-md);
+      font-family: var(--font-ar-sans);
+      font-size: 0.95rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s var(--ease-luxury), box-shadow 0.25s ease;
+    }
+
+    .btn-executive::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+      transform: skewX(-25deg);
+      transition: left 0.6s ease;
+      pointer-events: none;
+    }
+
+    .btn-executive:hover::after {
+      left: 140%;
+    }
+
+    #btn-top-whatsapp {
+      animation: waPulse 2.8s infinite ease-in-out;
+    }
+
+    @keyframes waPulse {
+      0%, 100% {
+        box-shadow: 0 4px 14px rgba(37, 211, 102, 0.2);
+      }
+      50% {
+        box-shadow: 0 4px 22px rgba(37, 211, 102, 0.55), 0 0 0 4px rgba(37, 211, 102, 0.12);
+      }
+    }
+
+    .btn-executive svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .btn-gold-primary {
+      background: linear-gradient(135deg, #F5E6A3 0%, #D4AF37 50%, #9E7614 100%);
+      color: #05120C;
+      border: 1px solid #FFF5C0;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-gold-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.52);
+    }
+
+    .btn-emerald-outline {
+      background: var(--surface-card);
+      color: var(--gold-bright);
+      border: var(--edge-gold-strong);
+    }
+
+    .btn-emerald-outline:hover {
+      transform: translateY(-2px);
+      background: rgba(18, 52, 36, 0.95);
+    }
+
+    /* Official Credential Data Card */
+    .credential-card {
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-lg);
+      padding: 18px 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    .section-header svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+    }
+
+    .cred-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .cred-item {
+      background: rgba(3, 10, 7, 0.65);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .cred-item-full {
+      grid-column: 1 / -1;
+    }
+
+    .cred-item dt {
+      font-size: 0.74rem;
+      color: var(--gold-muted);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .cred-item dd {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-white);
+      word-break: break-word;
+    }
+
+    .mono-gold {
+      font-family: var(--font-latin);
+      color: var(--gold-bright) !important;
+      letter-spacing: 0.05em;
+    }
+
+    .gold-highlight {
+      color: var(--gold-bright) !important;
+      font-size: 0.95rem !important;
+    }
+
+    /* Strategic Pillars */
+    .tier-heading {
+      font-size: 1rem;
+      color: var(--gold-pale);
+      margin-bottom: 12px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .pillars-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .pillar-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-md);
+      padding: 14px;
+      transition: transform 0.25s var(--ease-luxury), border-color 0.25s;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold-pale);
+    }
+
+    .pillar-icon-wrap {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pillar-icon-wrap svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .pillar-body h3 {
+      font-size: 0.94rem;
+      color: var(--gold-pale);
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .pillar-body p {
+      font-size: 0.81rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    /* Direct Contact Options */
+    .contact-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 10px 18px;
+      border-radius: var(--r-pill);
+      background: rgba(10, 32, 22, 0.85);
+      border: var(--edge-gold);
+      color: var(--text-white);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .contact-pill svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold);
+    }
+
+    .contact-pill:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--gold-bright);
+      color: var(--gold-bright);
+    }
+
+    /* Legal Directives */
+    .legal-directives {
+      background: rgba(6, 18, 13, 0.92);
+      border: var(--edge-gold);
+      border-radius: var(--r-md);
+      padding: 16px;
+    }
+
+    .legal-title {
+      font-size: 0.9rem;
+      color: var(--gold-pale);
+      margin-bottom: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .legal-title svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold);
+    }
+
+    .legal-list {
+      padding-inline-start: 18px;
+      font-size: 0.79rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .un-citation {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(212, 175, 55, 0.3);
+      font-size: 0.76rem;
+      color: var(--gold-bright);
+      text-align: center;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .portal-footer {
+      text-align: center;
+      padding-top: 12px;
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-org {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--gold-pale);
+    }
+
+    .footer-sub {
+      font-size: 0.76rem;
+      color: var(--text-light);
+    }
+
+    .footer-copy {
+      font-family: var(--font-latin);
+      font-size: 0.72rem;
+      color: var(--gold-muted);
+      margin-top: 6px;
+    }
+
+    .footer-agency-link {
+      color: var(--gold-muted);
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .footer-agency-link:hover {
+      color: var(--gold-bright);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: linear-gradient(135deg, #D4AF37 0%, #9E7818 100%);
+      color: #04100A;
+      padding: 10px 22px;
+      border-radius: var(--r-pill);
+      font-weight: 700;
+      font-size: 0.88rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+      z-index: 2000;
+      opacity: 0;
+      transition: all 0.35s var(--ease-luxury);
+      pointer-events: none;
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Scroll Reveal */
+    .anim-reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.65s var(--ease-luxury), transform 0.65s var(--ease-luxury);
+    }
+
+    .anim-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Executive Bio Card */
+    .bio-card {
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      border-radius: var(--r-lg);
+      padding: 20px 18px;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+
+    .bio-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    .bio-card-header svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .bio-card-header h2 {
+      font-size: 1rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+    }
+
+    .bio-quote-text {
+      font-size: 0.86rem;
+      color: var(--text-light);
+      line-height: 1.75;
+      text-align: justify;
+    }
+
+    /* Key Impact Metrics */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .metric-card {
+      background: rgba(4, 15, 10, 0.75);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      border-radius: var(--r-md);
+      padding: 12px 10px;
+      text-align: center;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold-bright);
+    }
+
+    .metric-num {
+      font-family: var(--font-latin);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--gold-bright);
+      line-height: 1.2;
+    }
+
+    .metric-lbl {
+      font-size: 0.72rem;
+      color: var(--gold-muted);
+      margin-top: 4px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    /* All Channels Section */
+    .channels-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .channels-stack .channel-card {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.5s var(--ease-luxury), transform 0.5s var(--ease-luxury), background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .channels-section.is-visible .channel-card,
+    .portal-loaded .channels-section .channel-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .channels-stack .channel-card:nth-child(1)  { transition-delay: 0.04s; }
+    .channels-stack .channel-card:nth-child(2)  { transition-delay: 0.08s; }
+    .channels-stack .channel-card:nth-child(3)  { transition-delay: 0.12s; }
+    .channels-stack .channel-card:nth-child(4)  { transition-delay: 0.16s; }
+    .channels-stack .channel-card:nth-child(5)  { transition-delay: 0.20s; }
+    .channels-stack .channel-card:nth-child(6)  { transition-delay: 0.24s; }
+    .channels-stack .channel-card:nth-child(7)  { transition-delay: 0.28s; }
+    .channels-stack .channel-card:nth-child(8)  { transition-delay: 0.32s; }
+    .channels-stack .channel-card:nth-child(9)  { transition-delay: 0.36s; }
+    .channels-stack .channel-card:nth-child(10) { transition-delay: 0.40s; }
+    .channels-stack .channel-card:nth-child(11) { transition-delay: 0.44s; }
+
+    .channel-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: var(--r-md);
+      background: var(--surface-card);
+      border: var(--edge-gold);
+      color: var(--text-white);
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .channel-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -130%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 243, 184, 0.12), transparent);
+      transform: skewX(-25deg);
+      transition: left 0.75s ease;
+      pointer-events: none;
+    }
+
+    .channel-card:hover::after {
+      left: 150%;
+    }
+
+    .channel-card:hover {
+      background: var(--surface-card-hover);
+      border-color: var(--gold-bright);
+      transform: translateY(-3px) scale(1.008);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.85), 0 0 18px rgba(212, 175, 55, 0.22);
+    }
+
+    .channel-card:hover .channel-icon-wrap {
+      transform: scale(1.08) rotate(2deg);
+    }
+
+    .channel-icon-wrap {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.25s var(--ease-luxury);
+    }
+
+    .channel-icon-wrap svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .channel-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .channel-sub {
+      font-size: 0.73rem;
+      color: var(--gold-pale);
+      font-family: var(--font-latin);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      direction: ltr;
+      text-align: left;
+    }
+
+    [dir="rtl"] .channel-sub {
+      text-align: right;
+    }
+
+    .channel-badge {
+      font-size: 0.68rem;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* Branded Channel Icon Gradients */
+    .icon-whatsapp { background: #25D366; color: #fff; }
+    .icon-linkedin { background: #0A66C2; color: #fff; }
+    .icon-instagram { background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCAF45); color: #fff; }
+    .icon-facebook { background: #1877F2; color: #fff; }
+    .icon-tiktok { background: #000000; color: #fff; border: 1px solid rgba(255,255,255,0.25); }
+    .icon-telegram { background: #229ED9; color: #fff; }
+    .icon-snapchat { background: #FFFC00; box-shadow: 0 4px 12px rgba(255, 252, 0, 0.35); }
+    .icon-snapchat svg { fill: #FFFFFF !important; }
+    .icon-researchgate { background: #00CCBB; color: #fff; }
+    .icon-orcid { background: #A6CE39; color: #fff; }
+    .icon-usthb { background: linear-gradient(135deg, #09472e 0%, #15734d 100%); color: var(--gold-bright); border: 1px solid rgba(212,175,55,0.4); }
+    .icon-gmail { background: #EA4335; color: #fff; }
+
+    /* Live Status Beacon */
+    .beacon-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: rgba(37, 211, 102, 0.12);
+      border: 1px solid rgba(37, 211, 102, 0.35);
+      font-size: 0.73rem;
+      font-weight: 600;
+      color: #6CFCA6;
+      width: fit-content;
+    }
+
+    .beacon-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #25D366;
+      box-shadow: 0 0 8px #25D366;
+      animation: beaconFlash 1.8s infinite ease-in-out;
+    }
+
+    @keyframes beaconFlash {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* Core Competencies */
+    .competency-wrap {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(212, 175, 55, 0.25);
+    }
+
+    .competency-title {
+      font-size: 0.74rem;
+      color: var(--gold-pale);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .competency-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .comp-tag {
+      font-size: 0.7rem;
+      padding: 4px 9px;
+      border-radius: var(--r-pill);
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--text-light);
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .comp-tag:hover {
+      background: rgba(212, 175, 55, 0.22);
+      border-color: var(--gold-bright);
+      color: var(--gold-bright);
+      transform: translateY(-1px);
+    }
+
+    /* Digital QR Business Card Modal */
+    .qr-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 5000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s var(--ease-luxury), visibility 0.35s ease;
+    }
+
+    .qr-modal.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .qr-modal-card {
+      background: linear-gradient(180deg, rgba(16, 46, 32, 0.98) 0%, rgba(4, 14, 10, 0.99) 100%);
+      border: var(--edge-gold-strong);
+      border-radius: var(--r-lg);
+      padding: 24px 20px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 35px rgba(212,175,55,0.3);
+      transform: scale(0.92) translateY(20px);
+      transition: transform 0.35s var(--ease-luxury);
+    }
+
+    .qr-modal.is-active .qr-modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .qr-modal-close {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      color: var(--gold-bright);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: all 0.2s ease;
+    }
+
+    .qr-modal-close:hover {
+      background: var(--gold);
+      color: #000;
+    }
+
+    .qr-modal-avatar-frame {
+      position: relative;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--gold-pale), var(--gold-dark));
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    .qr-modal-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .qr-avatar-badge {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #25D366;
+      color: #fff;
+      font-size: 0.65rem;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      border: 2px solid #05140E;
+    }
+
+    .qr-modal-name {
+      font-size: 1.15rem;
+      color: var(--gold-bright);
+      font-weight: 800;
+      font-family: var(--font-ar-serif);
+      margin-bottom: 2px;
+    }
+
+    .qr-modal-title {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .qr-code-box {
+      background: #FFFFFF;
+      padding: 14px;
+      border-radius: var(--r-md);
+      display: inline-block;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+      margin-bottom: 10px;
+      border: 2px solid var(--gold);
+    }
+
+    .qr-code-img {
+      width: 170px;
+      height: 170px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .qr-scan-hint {
+      font-size: 0.78rem;
+      color: var(--gold-pale);
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .qr-modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Floating Quick Executive Dock */
+    .floating-dock {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%) translateY(90px);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 4000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(5, 18, 12, 0.90);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      border-radius: 999px;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.85), 0 0 20px rgba(212, 175, 55, 0.25);
+      transition: transform 0.4s var(--ease-luxury), opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .floating-dock.is-visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .dock-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--gold-bright);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s var(--ease-luxury);
+      position: relative;
+    }
+
+    .dock-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      transition: transform 0.25s ease;
+    }
+
+    .dock-btn:hover {
+      transform: translateY(-3px) scale(1.1);
+      border-color: var(--gold-bright);
+      box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+    }
+
+    .dock-btn:hover svg {
+      transform: scale(1.1);
+    }
+
+    .dock-btn-wa {
+      background: #25D366;
+      border-color: #25D366;
+      color: #FFFFFF;
+    }
+
+    .dock-btn-wa:hover {
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.55);
+    }
+
+    .dock-btn-vcard {
+      background: linear-gradient(135deg, #F5E6A3 0%, #D4AF37 100%);
+      border-color: #FFF3B8;
+      color: #030E08;
+    }
+
+    .dock-btn-vcard:hover {
+      box-shadow: 0 6px 18px rgba(212, 175, 55, 0.6);
+    }
+
+    @media (max-width: 380px) {
+      .cred-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Interactive Channel Filter Bar */
+    .channel-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 4px 0 16px;
+    }
+
+    .filter-pill {
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: var(--r-pill);
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s var(--ease-luxury);
+    }
+
+    .filter-pill:hover {
+      background: rgba(212, 175, 55, 0.18);
+      border-color: var(--gold);
+      color: var(--gold-bright);
+      transform: translateY(-1px);
+    }
+
+    .filter-pill.is-active {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(212, 175, 55, 0.15) 100%);
+      border-color: var(--gold-bright);
+      color: var(--gold-bright);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+    }
+
+    .channel-card.is-filtered-out {
+      display: none !important;
+    }
+
+    /* Channel Quick Copy Email Button */
+    .channel-copy-btn {
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--gold-pale);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-inline-start: auto;
+      margin-inline-end: 8px;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .channel-copy-btn:hover {
+      background: var(--gold);
+      color: #04120C;
+      border-color: var(--gold-bright);
+      transform: scale(1.08);
+    }
+
+    .channel-copy-btn svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    /* Executive Print Stylesheet */
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+      }
+      #particles-canvas, .preloader, .floating-dock, .qr-modal, .lang-bar, .channel-filter-bar, .channel-copy-btn {
+        display: none !important;
+      }
+      .portal-container {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+      .sovereign-header, .hero-section, .authority-banner, .bio-card, .cta-grid, .channels-section, .credential-card, .pillars-section, .sovereign-footer {
+        border: 1px solid #ddd !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        color: #111 !important;
+      }
+      .person-name-ar, .person-name-en, .tier-heading, .section-header h2, .pillar-card-title {
+        color: #0b3b24 !important;
+      }
+      .channel-card {
+        border: 1px solid #ccc !important;
+        background: #fbfbfb !important;
+        break-inside: avoid;
+      }
+      .channel-title, .channel-sub {
+        color: #222 !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sovereign Executive Preloader -->
+  <div class="preloader" id="preloader" role="status" aria-live="polite">
+    <div class="preloader-backdrop"></div>
+    <div class="preloader-inner">
+      <!-- Sovereign Medallion with rotating concentric golden rings -->
+      <div class="preloader-emblem-wrap">
+        <div class="preloader-glow-aura"></div>
+        <div class="preloader-ring-pulse"></div>
+        <div class="preloader-ring-outer"></div>
+        <div class="preloader-ring-inner"></div>
+        <div class="preloader-center-seal">
+          <svg viewBox="0 0 48 48" class="preloader-seal-svg" aria-hidden="true">
+            <path d="M24 4l5.5 11.2L42 17l-9 8.8 2.1 12.4L24 32.4 12.9 38.2 15 25.8 6 17l12.5-1.8L24 4z" fill="url(#goldGradSeal)"/>
+            <circle cx="24" cy="24" r="5" fill="#04120C" stroke="#FFF3B8" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="goldGradSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF3B8"/>
+                <stop offset="50%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#9B7415"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Identity -->
+      <div class="preloader-identity">
+        <div class="preloader-name">د. أبو اليقظان باكلي</div>
+        <div class="preloader-inst">USTHB • TECHINNOV Incubator</div>
+      </div>
+
+      <!-- Progress Track & Counter -->
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar-track">
+          <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+        </div>
+        <div class="preloader-status-row">
+          <span class="preloader-label" id="preloader-text">جاري تحميل البوابة الرسمية...</span>
+          <span class="preloader-percent" id="preloader-percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toast-notification">تم النسخ بنجاح</div>
+
+  <!-- Main Container -->
+  <main class="portal-container">
+    
+    <!-- Language Switcher Bar -->
+    <nav class="lang-bar" aria-label="Language selection">
+      <button type="button" class="lang-btn active" data-lang="ar" id="btn-lang-ar">العربية</button>
+      <button type="button" class="lang-btn" data-lang="fr" id="btn-lang-fr">Français</button>
+      <button type="button" class="lang-btn" data-lang="en" id="btn-lang-en">English</button>
+    </nav>
+
+    <!-- Sovereign Top Header -->
+    <header class="sovereign-header anim-reveal">
+      <div class="header-crest" aria-label="علم الجمهورية الجزائرية الديمقراطية الشعبية">
+        <!-- Official Flag of Algeria to Scale -->
+        <img 
+          src="algeria-flag.png" 
+          alt="علم الجمهورية الجزائرية الديمقراطية الشعبية" 
+          class="flag-crest-img"
+          onerror="this.src='algeria-flag.svg'"
+        >
+      </div>
+      <h2 class="republic-ar" id="txt-republic-ar">الجمهورية الجزائرية الديمقراطية الشعبية</h2>
+      <div class="republic-en" id="txt-republic-en">People's Democratic Republic of Algeria</div>
+      <div class="header-rule"></div>
+      <h3 class="org-title" id="txt-org-title">جامعة العلوم والتكنولوجيا هواري بومدين • USTHB</h3>
+      <div class="org-sub" id="txt-org-sub">حاضنة الأعمال والتكنولوجيا • TECHINNOV Incubator</div>
+      <div class="pillars-pill" id="txt-pillars-pill">
+        <span>تعليم عالي</span> • <span>بحث علمي</span> • <span>ابتكار وريادة أعمال</span>
+      </div>
+    </header>
+
+    <!-- Hero Portrait with Embedded Gold Plaque -->
+    <section class="hero-section anim-reveal" aria-label="Portrait officiel">
+      <div class="hero-portrait-frame">
+        <!-- Master Official Portrait -->
+        <img 
+          src="portrait.jpg" 
+          alt="د. أبو اليقظان باكلي - مدير حاضنة TECHINNOV وأستاذ محاضر" 
+          class="hero-img"
+          id="hero-portrait-img"
+          onerror="this.src='portrait.jpg'"
+        >
+
+        <!-- Coordinates locked inside the golden cartouche at the bottom of the portrait -->
+        <div class="picture-gold-box-content">
+          <div class="verified-mini-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+            </svg>
+            <span id="txt-badge-status">مدير حاضنة أعمال • باحث جامعي</span>
+          </div>
+
+          <h1 class="person-name-ar" id="txt-person-name-ar">د. أبو اليقظان باكلي</h1>
+          <div class="person-name-en" id="txt-person-name-en">Dr. Aboulyakdane BAKELLI</div>
+          
+          <div class="gold-divider"></div>
+          
+          <p class="person-title" id="txt-person-title">مدير حاضنة TECHINNOV • أستاذ محاضر USTHB</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Authority Banner -->
+    <section class="authority-banner anim-reveal" aria-label="الصفة الرسمية">
+      <div class="authority-banner-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+        </svg>
+      </div>
+      <div class="authority-banner-text">
+        <strong id="txt-banner-title">مدير حاضنة الأعمال TECHINNOV - USTHB</strong>
+        <span id="txt-banner-sub">أستاذ محاضر وباحث • مهندس ومطور لمنظومة ريادة الأعمال</span>
+        <div class="beacon-status-pill">
+          <span class="beacon-dot"></span>
+          <span id="txt-beacon-status">متاح للشراكات الريادية والتأطير الأكاديمي والابتكار</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Bio & Vision Card -->
+    <section class="bio-card anim-reveal" aria-label="النبذة التعريفية">
+      <div class="bio-card-header">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+        </svg>
+        <h2 id="txt-bio-heading">النبذة المهنية ورؤية الابتكار</h2>
+      </div>
+      <p class="bio-quote-text" id="txt-bio-desc">
+        أستاذ محاضر وباحث في علم الجيولوجيا، ومدير حاضنة الأعمال TECHINNOV بجامعة العلوم والتكنولوجيا هواري بومدين (USTHB)، متمرس في التصميم التعليمي، الابتكار البيداغوجي، وريادة الأعمال. أعمل في نقطة التقاء التعليم العالي والبحث العلمي التطبيقي ومنظومات الشركات الناشئة لتحويل المعرفة إلى أثر حقيقي وملموس. درّبت أكثر من 1,300 صاحب مشروع في التفكير التصميمي ومخطط نموذج العمل التجاري مع تقديم أكثر من 1,200 ساعة تدريبية. عميد سابق لشؤون الطلبة، وأعمل حالياً كمهندس للابتكار، مرشد وموجّه، ومطور لبيئة ريادة الأعمال.
+      </p>
+
+      <!-- Key Impact Metrics -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num" data-counter="1300" data-prefix="+">+1,300</div>
+          <div class="metric-lbl" id="lbl-metric-1">صاحب مشروع مدرّب</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num" data-counter="1200" data-prefix="+">+1,200</div>
+          <div class="metric-lbl" id="lbl-metric-2">ساعة تدريب واستشارة</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">TECHINNOV</div>
+          <div class="metric-lbl" id="lbl-metric-3">إدارة حاضنة الأعمال</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">USTHB</div>
+          <div class="metric-lbl" id="lbl-metric-4">أستاذ محاضر وباحث</div>
+        </div>
+      </div>
+
+      <!-- Core Competency & Innovation Tags -->
+      <div class="competency-wrap">
+        <div class="competency-title" id="txt-comp-title">مجالات التميز والخبرة الاستراتيجية:</div>
+        <div class="competency-tags">
+          <span class="comp-tag">Design Thinking</span>
+          <span class="comp-tag">Business Model Canvas</span>
+          <span class="comp-tag">TECHINNOV Incubator</span>
+          <span class="comp-tag">Startup Mentorship</span>
+          <span class="comp-tag">Applied Geology</span>
+          <span class="comp-tag">USTHB University</span>
+          <span class="comp-tag">Instructional Design</span>
+          <span class="comp-tag">+1,300 Project Holders</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Executive Action CTAs -->
+    <section class="cta-grid anim-reveal" aria-label="إجراءات سريعة">
+      <button type="button" class="btn-executive btn-gold-primary" onclick="playLuxuryClick('confirm'); downloadVCard()">
+        <!-- Contact Save Icon SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z"/>
+        </svg>
+        <span id="btn-save-contact">حفظ بطاقة الاتصال الرسمية (vCard)</span>
+      </button>
+
+      <a href="https://wa.me/qr/VOLOK6MFREQSH1" target="_blank" rel="noopener noreferrer" class="btn-executive btn-emerald-outline" id="btn-top-whatsapp" onclick="playLuxuryClick()" style="border-color: #25D366; color: #4EFA8B;">
+        <!-- WhatsApp SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.78 14.07c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.64-.93-2.15-.89-3.53-3.08-3.64-3.22-.11-.15-.86-1.15-.86-2.19s.54-1.55.74-1.76c.2-.21.43-.26.58-.26.15 0 .29 0 .42.01.14.01.32-.05.5.38.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.5.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-1.2.76-1.44.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.26z"/>
+        </svg>
+        <span id="btn-top-whatsapp-txt">محادثة واتساب المباشرة (WhatsApp)</span>
+      </a>
+
+      <button type="button" class="btn-executive btn-emerald-outline" onclick="playLuxuryClick(); openQrModal()" id="btn-qr-card">
+        <!-- QR Code Icon SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-3 2h2v3h-2v-3zm2 3h3v3h-3v-3zm2-5h3v2h-3v-2zm-4 4h2v2h-2v-2z"/>
+        </svg>
+        <span id="btn-qr-card-txt">معاينة بطاقة QR الذكية</span>
+      </button>
+
+      <button type="button" class="btn-executive btn-emerald-outline" onclick="playLuxuryClick(); shareProfile()">
+        <!-- Share SVG -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/>
+        </svg>
+        <span id="btn-share-profile">مشاركة الرابط الرسمي</span>
+      </button>
+    </section>
+
+    <!-- All Social & Professional Channels -->
+    <section class="channels-section anim-reveal" aria-label="قنوات التواصل والمنصات">
+      <h2 class="tier-heading" id="txt-channels-heading">المنصات الرسمية وقنوات التواصل</h2>
+      
+      <!-- Interactive Channel Filter Bar -->
+      <div class="channel-filter-bar" role="tablist" aria-label="تصنيف المنصات">
+        <button type="button" class="filter-pill is-active" data-filter="all" id="filter-tab-all" onclick="filterChannels('all', this)">الكل (11)</button>
+        <button type="button" class="filter-pill" data-filter="academic" id="filter-tab-academic" onclick="filterChannels('academic', this)">أكاديمي وبحثي</button>
+        <button type="button" class="filter-pill" data-filter="direct" id="filter-tab-direct" onclick="filterChannels('direct', this)">تواصل مباشر</button>
+        <button type="button" class="filter-pill" data-filter="social" id="filter-tab-social" onclick="filterChannels('social', this)">شبكات اجتماعية</button>
+      </div>
+
+      <div class="channels-stack">
+        
+        <!-- ORCID -->
+        <a href="https://orcid.org/0000-0002-5607-5410" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="academic">
+          <div class="channel-icon-wrap icon-orcid">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.516.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.434h2.241c2.616 0 3.844-1.641 3.844-3.719 0-2.316-1.509-3.715-3.844-3.715h-2.241z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">ORCID iD</span>
+            <span class="channel-sub">0000-0002-5607-5410</span>
+          </div>
+          <span class="channel-badge">Academic ID</span>
+        </a>
+
+        <!-- ResearchGate -->
+        <a href="https://www.researchgate.net/profile/Aboulyakdane-Bakelli-2?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="academic">
+          <div class="channel-icon-wrap icon-researchgate">
+            <svg viewBox="0 0 24 24"><path d="M19.586 0c-.818 0-1.508.19-2.072.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-1.128-.854 3.37 3.37 0 0 0-1.444-.31c-1.11 0-2.042.42-2.793 1.256-.752.836-1.13 1.954-1.13 3.35 0 1.436.37 2.57 1.11 3.4.74.832 1.66 1.25 2.76 1.25.59 0 1.115-.126 1.572-.377.457-.251.815-.595 1.075-1.03v5.184h2.263V0h-1zm-4.3 7.822c-.443 0-.82-.19-1.13-.568-.31-.38-.466-.92-.466-1.623 0-.726.155-1.28.465-1.66.31-.38.687-.57 1.13-.57.443 0 .822.19 1.132.57.31.38.466.934.466 1.66 0 .703-.156 1.243-.466 1.623-.31.38-.69.568-1.132.568zM5.3 16.037H3.037V24H5.3v-7.963zm-1.13-2.148c.767 0 1.39-.622 1.39-1.388 0-.767-.623-1.39-1.39-1.39-.766 0-1.39.623-1.39 1.39 0 .766.624 1.388 1.39 1.388z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">ResearchGate</span>
+            <span class="channel-sub">Publications & Citations (USTHB)</span>
+          </div>
+          <span class="channel-badge">Research</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/yakdanebk?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="academic social">
+          <div class="channel-icon-wrap icon-linkedin">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.69 1.69 0 1 0 0-3.38 1.69 1.69 0 0 0 0 3.38m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">LinkedIn</span>
+            <span class="channel-sub">linkedin.com/in/yakdanebk</span>
+          </div>
+          <span class="channel-badge">Professional</span>
+        </a>
+
+        <!-- USTHB Academic Email -->
+        <a href="mailto:aboulyakdane.bakelli@usthb.edu.dz" class="channel-card" data-category="academic direct">
+          <div class="channel-icon-wrap icon-usthb">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 8.5L3.74 9 12 4.5 20.26 9 12 11.5zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title" id="lbl-ch-usthb">البريد الأكاديمي الرسمي (USTHB)</span>
+            <span class="channel-sub">aboulyakdane.bakelli@usthb.edu.dz</span>
+          </div>
+          <button type="button" class="channel-copy-btn" onclick="copySpecificText(event, 'aboulyakdane.bakelli@usthb.edu.dz', 'تم نسخ البريد الأكاديمي الرسمي')" title="نسخ البريد الأكاديمي" aria-label="نسخ البريد الأكاديمي">
+            <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          </button>
+          <span class="channel-badge">Academic</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/qr/VOLOK6MFREQSH1" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="direct social">
+          <div class="channel-icon-wrap icon-whatsapp">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.78 14.07c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.64-.93-2.15-.89-3.53-3.08-3.64-3.22-.11-.15-.86-1.15-.86-2.19s.54-1.55.74-1.76c.2-.21.43-.26.58-.26.15 0 .29 0 .42.01.14.01.32-.05.5.38.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.5.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-1.2.76-1.44.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.26z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">WhatsApp</span>
+            <span class="channel-sub">Direct Chat & QR Code</span>
+          </div>
+          <span class="channel-badge" id="badge-wa">محادثة فورية</span>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/yaki_bk" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="direct social">
+          <div class="channel-icon-wrap icon-telegram">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">Telegram</span>
+            <span class="channel-sub">t.me/yaki_bk</span>
+          </div>
+          <span class="channel-badge">Direct</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/yakdane_bk?rpxt=MXY3bjhnaTZ3OTMxaA==" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="social">
+          <div class="channel-icon-wrap icon-instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">Instagram</span>
+            <span class="channel-sub">@yakdane_bk</span>
+          </div>
+          <span class="channel-badge">Official</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/19yumLvG91/" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="social">
+          <div class="channel-icon-wrap icon-facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">Facebook</span>
+            <span class="channel-sub">Aboulyakdane Bakelli</span>
+          </div>
+          <span class="channel-badge">Community</span>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@yakdanebakelli?_r=1&_t=ZS-9AkKuvUlqSe" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="social">
+          <div class="channel-icon-wrap icon-tiktok">
+            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.07a6.29 6.29 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 3.77.92V6.69z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">TikTok</span>
+            <span class="channel-sub">@yakdanebakelli</span>
+          </div>
+          <span class="channel-badge">Media</span>
+        </a>
+
+        <!-- Snapchat -->
+        <a href="https://www.snapchat.com/add/yak_bk?locale=en-US&share_id=qTvTiHJbSYo" target="_blank" rel="noopener noreferrer" class="channel-card" data-category="social">
+          <div class="channel-icon-wrap icon-snapchat">
+            <svg viewBox="0 0 500 500" aria-hidden="true">
+              <path d="M417.93 340.71c-60.61-29.34-70.27-74.64-70.7-78-.52-4.07-1.11-7.27 3.38-11.41 4.33-4 23.54-15.89 28.87-19.61 8.81-6.16 12.69-12.31 9.83-19.87-2-5.23-6.87-7.2-12-7.2a22.3 22.3 0 0 0-4.81.54c-9.68 2.1-19.08 6.95-24.52 8.26a8.6 8.6 0 0 1-2 .27c-2.9 0-4-1.29-3.72-4.78.68-10.58 2.12-31.23.45-50.52-2.29-26.54-10.85-39.69-21-51.32C316.8 101.43 294 77.2 250 77.2s-66.77 24.23-71.65 29.8c-10.18 11.63-18.73 24.78-21 51.32-1.67 19.29-.17 39.93.45 50.52.2 3.32-.82 4.78-3.72 4.78a8.6 8.6 0 0 1-2-.27c-5.43-1.31-14.83-6.16-24.51-8.26a22.3 22.3 0 0 0-4.81-.54c-5.15 0-10 2-12 7.2-2.86 7.56 1 13.71 9.84 19.87 5.33 3.72 24.54 15.6 28.87 19.61 4.48 4.14 3.9 7.34 3.38 11.41-.43 3.41-10.1 48.71-70.7 78-3.55 1.72-9.59 5.36 1.06 11.24 16.72 9.24 27.85 8.25 36.5 13.82 7.34 4.73 3 14.93 8.34 18.61 6.56 4.53 25.95-.32 51 7.95 21 6.92 33.76 26.47 71 26.47s50.37-19.64 71-26.47c25-8.27 44.43-3.42 51-7.95 5.33-3.68 1-13.88 8.34-18.61 8.65-5.57 19.77-4.58 36.5-13.82 10.63-5.81 4.59-9.45 1.04-11.17" fill="#FFFFFF" stroke="#000000" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title">Snapchat</span>
+            <span class="channel-sub">snapchat.com/add/yak_bk</span>
+          </div>
+          <span class="channel-badge">Stories</span>
+        </a>
+
+        <!-- Personal / Direct Email -->
+        <a href="mailto:yakdane.bakelli@gmail.com" class="channel-card" data-category="direct">
+          <div class="channel-icon-wrap icon-gmail">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="channel-info">
+            <span class="channel-title" id="lbl-ch-gmail">البريد المباشر والشراكات</span>
+            <span class="channel-sub">yakdane.bakelli@gmail.com</span>
+          </div>
+          <button type="button" class="channel-copy-btn" onclick="copySpecificText(event, 'yakdane.bakelli@gmail.com', 'تم نسخ بريد الشراكات والمراسلات المباشرة')" title="نسخ بريد الشراكات" aria-label="نسخ بريد الشراكات">
+            <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          </button>
+          <span class="channel-badge">Contact</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Official Credential Details Card -->
+    <section class="credential-card anim-reveal" aria-label="بيانات الاعتماد الأكاديمي والمهني">
+      <div class="section-header">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+        </svg>
+        <h2 id="txt-cred-title">بيانات الاعتماد الأكاديمي والمهني</h2>
+      </div>
+
+      <dl class="cred-grid">
+        <div class="cred-item">
+          <dt id="lbl-full-name">الاسم واللقب (Nom & Prénom)</dt>
+          <dd id="val-full-name">د. أبو اليقظان باكلي • Dr. Aboulyakdane BAKELLI</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-role">الرتبة الأكاديمية (Grade)</dt>
+          <dd class="gold-highlight" id="val-role">أستاذ محاضر وباحث (Associate Professor)</dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-pos">المنصب الإداري والقيادي</dt>
+          <dd class="gold-highlight" id="val-pos">مدير حاضنة الأعمال والتكنولوجيا TECHINNOV - USTHB</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-inst">المؤسسة الجامعية</dt>
+          <dd id="val-inst">جامعة العلوم والتكنولوجيا هواري بومدين (USTHB)</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-field">التخصص العلمي</dt>
+          <dd id="val-field">الجيولوجيا والعلوم التطبيقية (Geology)</dd>
+        </div>
+
+        <div class="cred-item cred-item-full">
+          <dt id="lbl-prev">المسؤوليات السابقة</dt>
+          <dd id="val-prev">عميد شؤون الطلبة سابقاً (Former Dean of Students)</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-orcid">معرّف الباحث الأكاديمي (ORCID)</dt>
+          <dd class="mono-gold" id="val-orcid">0000-0002-5607-5410</dd>
+        </div>
+
+        <div class="cred-item">
+          <dt id="lbl-impact">مؤشر التدريب والإرشاد</dt>
+          <dd class="mono-gold" id="val-impact">+1300 Project Holders • +1200 Hours</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Key Institutional Pillars -->
+    <section class="pillars-section anim-reveal" aria-label="محاور العمل والابتكار">
+      <h2 class="tier-heading" id="txt-pillars-heading">المحاور الاستراتيجية ومجالات التميز</h2>
+      <div class="pillars-stack">
+        
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.5s4 4.5 4 8.5a4 4 0 0 1-8 0c0-4 4-8.5 4-8.5zm0 14.5c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p1-title">إدارة حاضنة TECHINNOV وتطوير الشركات الناشئة</h3>
+            <p id="txt-p1-desc">مرافقة حاملي المشاريع والباحثين لبناء شركات ناشئة واعدة، وربط مخرجات البحث العلمي والجامعي ببيئة الأعمال والاقتصاد الوطني.</p>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p2-title">التصميم التعليمي والتطوير البيداغوجي</h3>
+            <p id="txt-p2-desc">برامج تدريبية متقدمة في التفكير التصميمي (Design Thinking) ونموذج العمل التجاري (BMC) مع تقديم أكثر من 1,200 ساعة تدريبية معتمدة.</p>
+          </div>
+        </article>
+
+        <article class="pillar-card">
+          <div class="pillar-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 8.5L3.74 9 12 4.5 20.26 9 12 11.5zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+            </svg>
+          </div>
+          <div class="pillar-body">
+            <h3 id="txt-p3-title">البحث العلمي وعلوم الجيولوجيا</h3>
+            <p id="txt-p3-desc">بحوث وأوراق علمية منشورة دولياً في علوم الأرض والجيولوجيا، مسجلة ومفهرسة عبر منصات ResearchGate و ORCID العالمية.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portal-footer anim-reveal">
+      <div class="footer-org" id="txt-foot-org">الجمهورية الجزائرية الديمقراطية الشعبية</div>
+      <div class="footer-sub" id="txt-foot-sub">جامعة العلوم والتكنولوجيا هواري بومدين (USTHB) • حاضنة الأعمال TECHINNOV</div>
+      <div class="footer-copy">© 2026 Dr. Aboulyakdane BAKELLI • <a href="https://www.digitalagencey.com/" target="_blank" rel="noopener noreferrer" class="footer-agency-link" title="Digital Agency">Official Institutional Bio Portal by Digital Agency</a></div>
+    </footer>
+
+  </main>
+
+  <!-- Digital QR Business Card Modal -->
+  <div class="qr-modal" id="qrModal" onclick="closeQrModal(event)">
+    <div class="qr-modal-card" onclick="event.stopPropagation()">
+      <button type="button" class="qr-modal-close" onclick="closeQrModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="qr-modal-avatar-frame">
+        <img src="portrait.jpg" alt="د. أبو اليقظان باكلي" class="qr-modal-avatar">
+        <div class="qr-avatar-badge">✓</div>
+      </div>
+
+      <h3 class="qr-modal-name" id="txt-qr-modal-name">د. أبو اليقظان باكلي</h3>
+      <p class="qr-modal-title" id="txt-qr-modal-title">مدير حاضنة TECHINNOV • أستاذ محاضر USTHB</p>
+
+      <div class="qr-code-box">
+        <img 
+          src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&color=05150E&bgcolor=FFFFFF&data=https%3A%2F%2Fdigitalagency.com" 
+          id="qrCodeImg" 
+          alt="رمز QR للملف التعريفي لـ د. أبو اليقظان باكلي" 
+          class="qr-code-img"
+        >
+      </div>
+      <div class="qr-scan-hint" id="txt-qr-hint">امسح الرمز بكاميرا هاتفك للوصول الفوري للملف التعريفي</div>
+
+      <div class="qr-modal-actions">
+        <button type="button" class="btn-executive btn-gold-primary" onclick="playLuxuryClick('confirm'); downloadVCard()" style="font-size: 0.85rem; min-height: 44px;">
+          <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z"/></svg>
+          <span id="txt-qr-btn-vcard">حفظ بطاقة الاتصال (vCard)</span>
+        </button>
+        <button type="button" class="btn-executive btn-emerald-outline" onclick="playLuxuryClick(); copyCurrentLink()" style="font-size: 0.85rem; min-height: 44px;">
+          <svg viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          <span id="txt-qr-btn-copy">نسخ الرابط المباشر</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Executive Dock (Visible on Scroll) -->
+  <nav class="floating-dock" id="floatingDock" aria-label="Quick Actions">
+    <a href="https://wa.me/qr/VOLOK6MFREQSH1" target="_blank" rel="noopener noreferrer" class="dock-btn dock-btn-wa" onclick="playLuxuryClick()" title="WhatsApp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.78 14.07c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.64-.93-2.15-.89-3.53-3.08-3.64-3.22-.11-.15-.86-1.15-.86-2.19s.54-1.55.74-1.76c.2-.21.43-.26.58-.26.15 0 .29 0 .42.01.14.01.32-.05.5.38.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.5.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-1.2.76-1.44.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.18 1.26z"/></svg>
+    </a>
+    <button type="button" class="dock-btn dock-btn-vcard" onclick="playLuxuryClick('confirm'); downloadVCard()" title="حفظ بطاقة الاتصال" aria-label="حفظ بطاقة الاتصال">
+      <svg viewBox="0 0 24 24"><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z"/></svg>
+    </button>
+    <button type="button" class="dock-btn" onclick="playLuxuryClick(); openQrModal()" title="رمز QR الذكي" aria-label="رمز QR الذكي">
+      <svg viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-3 2h2v3h-2v-3zm2 3h3v3h-3v-3zm2-5h3v2h-3v-2zm-4 4h2v2h-2v-2z"/></svg>
+    </button>
+    <button type="button" class="dock-btn" onclick="playLuxuryClick(); shareProfile()" title="مشاركة الملف" aria-label="مشاركة الملف">
+      <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92z"/></svg>
+    </button>
+    <button type="button" class="dock-btn" id="dock-btn-sound" onclick="toggleAudio()" title="كتم / تفعيل الصوت التفاعلي" aria-label="كتم / تفعيل الصوت التفاعلي">
+      <svg viewBox="0 0 24 24" id="dock-sound-icon"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+    </button>
+    <button type="button" class="dock-btn" onclick="playLuxuryClick(); window.scrollTo({top: 0, behavior: 'smooth'})" title="للأعلى" aria-label="للأعلى">
+      <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+  </nav>
+
+  <!-- Ambient Golden Dust Particles Script -->
+  <script>
+    (function initParticles() {
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+      let particles = [];
+
+      let pointerX = -999, pointerY = -999;
+      window.addEventListener('mousemove', (e) => {
+        pointerX = e.clientX;
+        pointerY = e.clientY;
+      }, { passive: true });
+      window.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches[0]) {
+          pointerX = e.touches[0].clientX;
+          pointerY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
+
+      const count = Math.min(48, Math.floor(window.innerWidth / 10));
+      for (let i = 0; i < count; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          size: Math.random() * 2.2 + 0.6,
+          speedY: -(Math.random() * 0.45 + 0.15),
+          speedX: (Math.random() - 0.5) * 0.25,
+          alpha: Math.random() * 0.6 + 0.2,
+          fadeSpeed: (Math.random() * 0.008 + 0.003) * (Math.random() > 0.5 ? 1 : -1)
+        });
+      }
+
+      function loop() {
+        ctx.clearRect(0, 0, width, height);
+        for (let p of particles) {
+          // Interactive gentle deflection
+          const dx = p.x - pointerX;
+          const dy = p.y - pointerY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 90) {
+            const force = (90 - dist) / 90;
+            p.x += (dx / dist) * force * 1.6;
+            p.y += (dy / dist) * force * 1.6;
+          }
+
+          p.y += p.speedY;
+          p.x += p.speedX;
+          p.alpha += p.fadeSpeed;
+          if (p.alpha > 0.85 || p.alpha < 0.15) p.fadeSpeed *= -1;
+
+          if (p.y < -10) {
+            p.y = height + 10;
+            p.x = Math.random() * width;
+          }
+          if (p.x < -10) p.x = width + 10;
+          if (p.x > width + 10) p.x = -10;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(212, 175, 55, ${Math.max(0, p.alpha)})`;
+          ctx.shadowBlur = 8;
+          ctx.shadowColor = 'rgba(255, 243, 184, 0.6)';
+          ctx.fill();
+        }
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+    })();
+  </script>
+
+  <!-- Interaction, Multilingual Engine & vCard Logic -->
+  <script>
+    // Live Impact Metrics Counter
+    function initCounters() {
+      const counters = document.querySelectorAll('[data-counter]');
+      counters.forEach(counter => {
+        if (counter.dataset.counted === 'true') return;
+        
+        const target = parseInt(counter.dataset.counter, 10);
+        const prefix = counter.dataset.prefix || '';
+        const duration = 1400;
+        const startTimestamp = performance.now();
+
+        function step(timestamp) {
+          const elapsed = timestamp - startTimestamp;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const easeProgress = 1 - Math.pow(1 - progress, 3);
+          const currentVal = Math.floor(easeProgress * target);
+          counter.textContent = prefix + currentVal.toLocaleString('en-US');
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            counter.textContent = prefix + target.toLocaleString('en-US');
+            counter.dataset.counted = 'true';
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    // Coordinated Hero Reveal Animation
+    function triggerHeroReveals() {
+      const heroGroup = document.querySelectorAll('.sovereign-header, .hero-section, .authority-banner');
+      heroGroup.forEach((el, index) => {
+        setTimeout(() => el.classList.add('is-visible'), index * 80);
+      });
+      initCounters();
+    }
+
+    // High-End Sovereign Preloader & Progress Simulation
+    (function initPreloader() {
+      const preloader = document.getElementById('preloader');
+      const barFill = document.getElementById('preloader-bar-fill');
+      const percentEl = document.getElementById('preloader-percent');
+      if (!preloader) return;
+
+      let progress = 0;
+      let windowLoaded = false;
+
+      window.addEventListener('load', () => {
+        windowLoaded = true;
+      });
+
+      const interval = setInterval(() => {
+        if (!windowLoaded) {
+          // Progress quickly to ~80%
+          if (progress < 80) {
+            progress += Math.floor(Math.random() * 9) + 4;
+            if (progress > 80) progress = 80;
+          }
+        } else {
+          // Surge to 100% on complete asset load
+          progress += Math.floor(Math.random() * 16) + 12;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            if (barFill) barFill.style.width = '100%';
+            if (percentEl) percentEl.textContent = '100%';
+
+            setTimeout(() => {
+              preloader.classList.add('is-hidden');
+              document.body.classList.add('portal-loaded');
+              setTimeout(triggerHeroReveals, 100);
+            }, 240);
+            return;
+          }
+        }
+
+        if (barFill) barFill.style.width = progress + '%';
+        if (percentEl) percentEl.textContent = progress + '%';
+      }, 30);
+
+      // Failsafe timeout at 3s
+      setTimeout(() => {
+        if (!preloader.classList.contains('is-hidden')) {
+          clearInterval(interval);
+          if (barFill) barFill.style.width = '100%';
+          if (percentEl) percentEl.textContent = '100%';
+          preloader.classList.add('is-hidden');
+          document.body.classList.add('portal-loaded');
+          setTimeout(triggerHeroReveals, 100);
+        }
+      }, 3000);
+    })();
+
+    // Intersection Observer for Smooth Reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          if (entry.target.classList.contains('bio-card')) {
+            initCounters();
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.anim-reveal').forEach(el => observer.observe(el));
+
+    // Toast Notification Utility
+    function showToast(msg) {
+      const toast = document.getElementById('toast-notification');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    // Share Profile
+    async function shareProfile() {
+      const shareData = {
+        title: 'Dr. Aboulyakdane BAKELLI | د. أبو اليقظان باكلي',
+        text: 'الملف المهني والأكاديمي الرسمي للدكتور أبو اليقظان باكلي - مدير حاضنة الأعمال TECHINNOV وأستاذ محاضر بجامعة USTHB',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          copyCurrentLink();
+        }
+      } else {
+        copyCurrentLink();
+      }
+    }
+
+    function copyCurrentLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast(document.documentElement.lang === 'fr' ? 'Lien officiel copié avec succès' : (document.documentElement.lang === 'en' ? 'Official link copied successfully' : 'تم نسخ رابط الملف التعريفي بنجاح'));
+      }).catch(() => {
+        showToast(document.documentElement.lang === 'fr' ? 'Échec de la copie' : (document.documentElement.lang === 'en' ? 'Failed to copy' : 'تعذر النسخ التلقائي'));
+      });
+    }
+
+    // Generate & Download vCard (.vcf)
+    function downloadVCard() {
+      const vcardData = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'N:BAKELLI;Aboulyakdane;Dr.;;',
+        'FN:Dr. Aboulyakdane BAKELLI (د. أبو اليقظان باكلي)',
+        'ORG:Université des Sciences et de la Technologie Houari Boumediene (USTHB);TECHINNOV Incubator',
+        'TITLE:Director of TECHINNOV Incubator | Associate Professor (USTHB)',
+        'EMAIL;TYPE=PREF,INTERNET:aboulyakdane.bakelli@usthb.edu.dz',
+        'EMAIL;TYPE=WORK,INTERNET:yakdane.bakelli@gmail.com',
+        'URL;TYPE=LinkedIn:https://www.linkedin.com/in/yakdanebk',
+        'URL;TYPE=WhatsApp:https://wa.me/qr/VOLOK6MFREQSH1',
+        'URL;TYPE=ResearchGate:https://www.researchgate.net/profile/Aboulyakdane-Bakelli-2',
+        'URL;TYPE=ORCID:https://orcid.org/0000-0002-5607-5410',
+        'NOTE:Geologist & Associate Professor (USTHB) | Director of TECHINNOV-USTHB Incubator | Former Dean of Students | 1300+ Project Holders Trained | 1200+ Training Hours',
+        'END:VCARD'
+      ].join('\r\n');
+
+      const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Dr_Aboulyakdane_Bakelli_USTHB_Contact.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      showToast(document.documentElement.lang === 'fr' ? 'Carte de contact téléchargée' : (document.documentElement.lang === 'en' ? 'Contact card downloaded' : 'تم تحميل بطاقة الاتصال الرسمية'));
+    }
+
+    // Specific text copier with feedback
+    function copySpecificText(event, text, successMsg) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      playLuxuryClick('confirm');
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg || 'تم النسخ بنجاح');
+      }).catch(() => {
+        showToast('تعذر النسخ التلقائي');
+      });
+    }
+
+    // Interactive Channel Filter
+    function filterChannels(category, btn) {
+      playLuxuryClick();
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('is-active'));
+      if (btn) btn.classList.add('is-active');
+
+      const cards = document.querySelectorAll('.channels-stack .channel-card');
+      cards.forEach(card => {
+        const cat = card.dataset.category || '';
+        if (category === 'all' || cat.split(' ').includes(category)) {
+          card.classList.remove('is-filtered-out');
+        } else {
+          card.classList.add('is-filtered-out');
+        }
+      });
+    }
+
+    // Digital QR Business Card Modal Handlers
+    function openQrModal() {
+      const modal = document.getElementById('qrModal');
+      if (!modal) return;
+      const qrImg = document.getElementById('qrCodeImg');
+      if (qrImg) {
+        qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=260x260&color=05150E&bgcolor=FFFFFF&data=' + encodeURIComponent(window.location.href);
+      }
+      modal.classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeQrModal(event) {
+      if (event && event.target && event.target !== event.currentTarget && !event.target.classList.contains('qr-modal-close')) {
+        return;
+      }
+      const modal = document.getElementById('qrModal');
+      if (modal) {
+        modal.classList.remove('is-active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeQrModal();
+    });
+
+    // Floating Quick Executive Dock Scroll Revealer
+    window.addEventListener('scroll', () => {
+      const dock = document.getElementById('floatingDock');
+      if (!dock) return;
+      if (window.scrollY > 300) {
+        dock.classList.add('is-visible');
+      } else {
+        dock.classList.remove('is-visible');
+      }
+    }, { passive: true });
+
+    // Tactile Luxury Sound Synthesizer (Web Audio API)
+    let audioCtx = null;
+    let soundEnabled = true;
+
+    function toggleAudio() {
+      soundEnabled = !soundEnabled;
+      const icon = document.getElementById('dock-sound-icon');
+      if (icon) {
+        if (soundEnabled) {
+          icon.innerHTML = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>';
+          showToast(document.documentElement.lang === 'fr' ? 'Son interactif activé' : (document.documentElement.lang === 'en' ? 'Interactive sound enabled' : 'تم تفعيل المؤثرات الصوتية'));
+          playLuxuryClick('confirm');
+        } else {
+          icon.innerHTML = '<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27l4.73 4.73H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>';
+          showToast(document.documentElement.lang === 'fr' ? 'Son interactif désactivé' : (document.documentElement.lang === 'en' ? 'Interactive sound muted' : 'تم كتم المؤثرات الصوتية'));
+        }
+      }
+    }
+
+    function playLuxuryClick(type = 'default') {
+      if (!soundEnabled) return;
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return;
+        if (!audioCtx) audioCtx = new AudioContextClass();
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        const now = audioCtx.currentTime;
+
+        if (type === 'confirm') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(880, now);
+          osc.frequency.exponentialRampToValueAtTime(1320, now + 0.08);
+          gain.gain.setValueAtTime(0.04, now);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.09);
+          osc.start(now);
+          osc.stop(now + 0.09);
+        } else {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(960, now);
+          osc.frequency.exponentialRampToValueAtTime(520, now + 0.04);
+          gain.gain.setValueAtTime(0.025, now);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.045);
+          osc.start(now);
+          osc.stop(now + 0.045);
+        }
+      } catch (err) {
+        // Silently handle if audio policy prevents autoplay
+      }
+    }
+
+    // Subtle 3D Tilt Effect on Desktop Pointer
+    (function initTilt() {
+      const heroFrame = document.querySelector('.hero-portrait-frame');
+      if (!heroFrame || window.matchMedia('(pointer: coarse)').matches) return;
+      heroFrame.addEventListener('mousemove', (e) => {
+        const rect = heroFrame.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const rotX = -(y / (rect.height / 2)) * 6;
+        const rotY = (x / (rect.width / 2)) * 6;
+        heroFrame.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.01, 1.01, 1.01)`;
+      });
+      heroFrame.addEventListener('mouseleave', () => {
+        heroFrame.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+    })();
+
+    // Multilingual Translations (Arabic, French, English)
+    const translations = {
+      ar: {
+        dir: 'rtl',
+        preloader: 'جاري تحميل البوابة الرسمية...',
+        republicAr: 'الجمهورية الجزائرية الديمقراطية الشعبية',
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'جامعة العلوم والتكنولوجيا هواري بومدين • USTHB',
+        orgSub: 'حاضنة الأعمال والتكنولوجيا • TECHINNOV Incubator',
+        pillarsPill: '<span>تعليم عالي</span> • <span>بحث علمي</span> • <span>ابتكار وريادة أعمال</span>',
+        badgeStatus: 'مدير حاضنة أعمال • باحث جامعي',
+        personNameAr: 'د. أبو اليقظان باكلي',
+        personNameEn: 'Dr. Aboulyakdane BAKELLI',
+        personTitle: 'مدير حاضنة TECHINNOV • أستاذ محاضر USTHB',
+        bannerTitle: 'مدير حاضنة الأعمال TECHINNOV - USTHB',
+        bannerSub: 'أستاذ محاضر وباحث • مهندس ومطور لمنظومة ريادة الأعمال',
+        bioHeading: 'النبذة المهنية ورؤية الابتكار',
+        bioDesc: 'أستاذ محاضر وباحث في علم الجيولوجيا، ومدير حاضنة الأعمال TECHINNOV بجامعة العلوم والتكنولوجيا هواري بومدين (USTHB)، متمرس في التصميم التعليمي، الابتكار البيداغوجي، وريادة الأعمال. أعمل في نقطة التقاء التعليم العالي والبحث العلمي التطبيقي ومنظومات الشركات الناشئة لتحويل المعرفة إلى أثر حقيقي وملموس. درّبت أكثر من 1,300 صاحب مشروع في التفكير التصميمي ومخطط نموذج العمل التجاري مع تقديم أكثر من 1,200 ساعة تدريبية. عميد سابق لشؤون الطلبة، وأعمل حالياً كمهندس للابتكار، مرشد وموجّه، ومطور لبيئة ريادة الأعمال.',
+        metric1: 'صاحب مشروع مدرّب',
+        metric2: 'ساعة تدريب واستشارة',
+        metric3: 'إدارة حاضنة الأعمال',
+        metric4: 'أستاذ محاضر وباحث',
+        btnSaveContact: 'حفظ بطاقة الاتصال الرسمية (vCard)',
+        btnTopWhatsApp: 'محادثة واتساب المباشرة (WhatsApp)',
+        btnShareProfile: 'مشاركة الرابط الرسمي',
+        channelsHeading: 'المنصات الرسمية وقنوات التواصل',
+        badgeWa: 'محادثة فورية',
+        chUsthb: 'البريد الأكاديمي الرسمي (USTHB)',
+        chGmail: 'البريد المباشر والشراكات',
+        credTitle: 'بيانات الاعتماد الأكاديمي والمهني',
+        lblFullName: 'الاسم واللقب (Nom & Prénom)',
+        valFullName: 'د. أبو اليقظان باكلي • Dr. Aboulyakdane BAKELLI',
+        lblRole: 'الرتبة الأكاديمية (Grade)',
+        valRole: 'أستاذ محاضر وباحث (Associate Professor)',
+        lblPos: 'المنصب الإداري والقيادي',
+        valPos: 'مدير حاضنة الأعمال والتكنولوجيا TECHINNOV - USTHB',
+        lblInst: 'المؤسسة الجامعية',
+        valInst: 'جامعة العلوم والتكنولوجيا هواري بومدين (USTHB)',
+        lblField: 'التخصص العلمي',
+        valField: 'الجيولوجيا والعلوم التطبيقية (Geology)',
+        lblPrev: 'المسؤوليات السابقة',
+        valPrev: 'عميد شؤون الطلبة سابقاً (Former Dean of Students)',
+        lblOrcid: 'معرّف الباحث الأكاديمي (ORCID)',
+        lblImpact: 'مؤشر التدريب والإرشاد',
+        valImpact: '+1300 Project Holders • +1200 Hours',
+        pillarsHeading: 'المحاور الاستراتيجية ومجالات التميز',
+        p1Title: 'إدارة حاضنة TECHINNOV وتطوير الشركات الناشئة',
+        p1Desc: 'مرافقة حاملي المشاريع والباحثين لبناء شركات ناشئة واعدة، وربط مخرجات البحث العلمي والجامعي ببيئة الأعمال والاقتصاد الوطني.',
+        p2Title: 'التصميم التعليمي والتطوير البيداغوجي',
+        p2Desc: 'برامج تدريبية متقدمة في التفكير التصميمي (Design Thinking) ونموذج العمل التجاري (BMC) مع تقديم أكثر من 1,200 ساعة تدريبية معتمدة.',
+        p3Title: 'البحث العلمي وعلوم الجيولوجيا',
+        p3Desc: 'بحوث وأوراق علمية منشورة دولياً في علوم الأرض والجيولوجيا، مسجلة ومفهرسة عبر منصات ResearchGate و ORCID العالمية.',
+        beaconStatus: 'متاح للشراكات الريادية والتأطير الأكاديمي والابتكار',
+        compTitle: 'مجالات التميز والخبرة الاستراتيجية:',
+        btnQrCard: 'معاينة بطاقة QR الذكية',
+        qrModalName: 'د. أبو اليقظان باكلي',
+        qrModalTitle: 'مدير حاضنة TECHINNOV • أستاذ محاضر USTHB',
+        qrHint: 'امسح الرمز بكاميرا هاتفك للوصول الفوري للملف التعريفي',
+        qrBtnVcard: 'حفظ بطاقة الاتصال (vCard)',
+        qrBtnCopy: 'نسخ الرابط المباشر',
+        filterAll: 'الكل (11)',
+        filterAcademic: 'أكاديمي وبحثي',
+        filterDirect: 'تواصل مباشر',
+        filterSocial: 'شبكات اجتماعية',
+        footOrg: 'الجمهورية الجزائرية الديمقراطية الشعبية',
+        footSub: 'جامعة العلوم والتكنولوجيا هواري بومدين (USTHB) • حاضنة الأعمال TECHINNOV'
+      },
+      fr: {
+        dir: 'ltr',
+        preloader: 'Chargement du portail officiel...',
+        republicAr: 'République Algérienne Démocratique et Populaire',
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'Université des Sciences et de la Technologie Houari Boumediene • USTHB',
+        orgSub: 'Incubateur d’Entreprises et d’Innovation • TECHINNOV',
+        pillarsPill: '<span>Enseignement Supérieur</span> • <span>Recherche Scientifique</span> • <span>Innovation & Entrepreneuriat</span>',
+        badgeStatus: 'Directeur d’Incubateur • Enseignant-Chercheur',
+        personNameAr: 'د. أبو اليقظان باكلي',
+        personNameEn: 'Dr. Aboulyakdane BAKELLI',
+        personTitle: 'Directeur de TECHINNOV • Enseignant-Chercheur USTHB',
+        bannerTitle: 'Directeur de l’Incubateur TECHINNOV - USTHB',
+        bannerSub: 'Enseignant-chercheur, architecte de l’innovation et mentor',
+        bioHeading: 'Profil Professionnel & Vision de l’Innovation',
+        bioDesc: 'Enseignant-chercheur en géologie et directeur de l’incubateur TECHINNOV à l’Université des Sciences et de la Technologie Houari Boumediene (USTHB), spécialisé dans l’ingénierie pédagogique, l’innovation éducative et l’entrepreneuriat. J’évolue à la croisée de l’enseignement supérieur, de la recherche appliquée et de l’écosystème des startups pour transformer les apprentissages et la recherche en impact tangible. J’ai formé plus de 1 300 porteurs de projets au Design Thinking et au Business Model Canvas et dispensé plus de 1 200 heures de formation. Ancien doyen des étudiants, j’agis aujourd’hui comme architecte de l’innovation, mentor et bâtisseur d’écosystème.',
+        metric1: 'Porteurs de projets formés',
+        metric2: 'Heures de formation dispensées',
+        metric3: 'Direction d’incubateur',
+        metric4: 'Enseignant-chercheur',
+        btnSaveContact: 'Enregistrer le contact (vCard)',
+        btnTopWhatsApp: 'Discussion directe WhatsApp',
+        btnShareProfile: 'Partager le profil',
+        channelsHeading: 'Réseaux Officiels & Canaux de Contact',
+        badgeWa: 'Discussion directe',
+        chUsthb: 'E-mail académique officiel (USTHB)',
+        chGmail: 'E-mail direct & partenariats',
+        credTitle: 'Fiche d’Accréditation Académique & Professionnelle',
+        lblFullName: 'Nom et Prénom',
+        valFullName: 'Dr. Aboulyakdane BAKELLI • د. أبو اليقظان باكلي',
+        lblRole: 'Grade académique',
+        valRole: 'Maître de conférences / Enseignant-chercheur (Associate Professor)',
+        lblPos: 'Fonction de direction',
+        valPos: 'Directeur de l’Incubateur TECHINNOV - USTHB',
+        lblInst: 'Établissement universitaire',
+        valInst: 'Université des Sciences et de la Technologie Houari Boumediene (USTHB)',
+        lblField: 'Domaine d’expertise',
+        valField: 'Géologie et sciences de la Terre appliquées',
+        lblPrev: 'Responsabilités antérieures',
+        valPrev: 'Ancien Doyen des étudiants (Former Dean of Students)',
+        lblOrcid: 'Identifiant chercheur (ORCID)',
+        lblImpact: 'Indicateur de mentorat & formation',
+        valImpact: '+1 300 porteurs formés • +1 200 heures',
+        pillarsHeading: 'Axes Stratégiques & Domaines d’Excellence',
+        p1Title: 'Direction de TECHINNOV & Incubation de Startups',
+        p1Desc: 'Accompagner les porteurs de projets et chercheurs pour bâtir des startups pérennes et valoriser la recherche appliquée dans l’économie nationale.',
+        p2Title: 'Ingénierie Pédagogique & Innovation Éducative',
+        p2Desc: 'Programmes avancés en Design Thinking et Business Model Canvas (BMC) avec plus de 1 200 heures de formation certifiées.',
+        p3Title: 'Recherche Scientifique & Géologie',
+        p3Desc: 'Travaux scientifiques en géologie et sciences de la Terre répertoriés sur ResearchGate et indexés avec le code mondial ORCID.',
+        beaconStatus: 'Disponible pour partenariats, mentorat et innovation',
+        compTitle: 'Domaines d’Expertise Stratégique & Impact :',
+        btnQrCard: 'Carte de Visite QR Digitale',
+        qrModalName: 'Dr. Aboulyakdane BAKELLI',
+        qrModalTitle: 'Directeur Incubateur TECHINNOV • Enseignant-Chercheur USTHB',
+        qrHint: 'Scannez le code avec votre appareil photo pour accéder au profil',
+        qrBtnVcard: 'Enregistrer le contact (vCard)',
+        qrBtnCopy: 'Copier le lien direct',
+        filterAll: 'Tous (11)',
+        filterAcademic: 'Recherche & Académique',
+        filterDirect: 'Contact Direct',
+        filterSocial: 'Réseaux & Médias',
+        footOrg: 'République Algérienne Démocratique et Populaire',
+        footSub: 'Université des Sciences et de la Technologie Houari Boumediene (USTHB) • Incubateur TECHINNOV'
+      },
+      en: {
+        dir: 'ltr',
+        preloader: 'Loading official portal...',
+        republicAr: "People's Democratic Republic of Algeria",
+        republicEn: "People's Democratic Republic of Algeria",
+        orgTitle: 'University of Sciences and Technology Houari Boumediene • USTHB',
+        orgSub: 'Business & Technology Incubator • TECHINNOV Incubator',
+        pillarsPill: '<span>Higher Education</span> • <span>Scientific Research</span> • <span>Innovation & Entrepreneurship</span>',
+        badgeStatus: 'Incubator Director • Academic Researcher',
+        personNameAr: 'د. أبو اليقظان باكلي',
+        personNameEn: 'Dr. Aboulyakdane BAKELLI',
+        personTitle: 'Director of TECHINNOV • Associate Professor USTHB',
+        bannerTitle: 'Director of TECHINNOV-USTHB Incubator',
+        bannerSub: 'Associate Professor & Researcher • Innovation Architect & Ecosystem Builder',
+        bioHeading: 'Executive Profile & Innovation Vision',
+        bioDesc: 'Geologist and Associate Professor, director of TECHINNOV-USTHB incubator, focused on instructional design, educational innovation and entrepreneurship. I work at the intersection of higher education, applied research and startup ecosystems to turn learning and research into real impact. I have trained more than 1,300 project holders in Design Thinking and Business Model Canvas and delivered over 1,200 hours of training. Former Dean of Students, I now act as innovation architect, mentor and ecosystem builder.',
+        metric1: 'Trained Project Holders',
+        metric2: 'Hours of Training Delivered',
+        metric3: 'Incubator Management',
+        metric4: 'Associate Professor & Researcher',
+        btnSaveContact: 'Save Official Contact (vCard)',
+        btnTopWhatsApp: 'Direct WhatsApp Chat',
+        btnShareProfile: 'Share Official Profile',
+        channelsHeading: 'Official Channels & Networks',
+        badgeWa: 'Direct Chat',
+        chUsthb: 'Official Academic Email (USTHB)',
+        chGmail: 'Direct & Partnership Email',
+        credTitle: 'Academic & Professional Credentials',
+        lblFullName: 'Full Name',
+        valFullName: 'Dr. Aboulyakdane BAKELLI • د. أبو اليقظان باكلي',
+        lblRole: 'Academic Rank',
+        valRole: 'Associate Professor & Researcher (Grade de Maître de Conférences)',
+        lblPos: 'Executive Position',
+        valPos: 'Director of TECHINNOV-USTHB Business Incubator',
+        lblInst: 'University Institution',
+        valInst: 'University of Sciences and Technology Houari Boumediene (USTHB)',
+        lblField: 'Scientific Discipline',
+        valField: 'Geology & Applied Earth Sciences',
+        lblPrev: 'Previous Leadership',
+        valPrev: 'Former Dean of Students',
+        lblOrcid: 'Researcher Identifier (ORCID)',
+        lblImpact: 'Training & Mentorship Track Record',
+        valImpact: '+1,300 Project Holders • +1,200 Training Hours',
+        pillarsHeading: 'Strategic Pillars & Areas of Excellence',
+        p1Title: 'TECHINNOV Management & Startup Incubation',
+        p1Desc: 'Guiding project holders and researchers to launch sustainable startups, bridging university research with the national economy.',
+        p2Title: 'Instructional Design & Pedagogical Innovation',
+        p2Desc: 'Advanced training programs in Design Thinking and Business Model Canvas (BMC) backed by 1,200+ certified training hours.',
+        p3Title: 'Scientific Research & Geology',
+        p3Desc: 'Peer-reviewed research in earth sciences and geology indexed worldwide on ResearchGate and ORCID platforms.',
+        beaconStatus: 'Open to Innovation Partnerships, Mentorship & Academic Advisory',
+        compTitle: 'Core Competencies & Strategic Leadership:',
+        btnQrCard: 'Preview Digital QR Card',
+        qrModalName: 'Dr. Aboulyakdane BAKELLI',
+        qrModalTitle: 'Director of TECHINNOV • Associate Professor USTHB',
+        qrHint: 'Scan the QR code with your camera for instant profile access',
+        qrBtnVcard: 'Save Official Contact (vCard)',
+        qrBtnCopy: 'Copy Direct Link',
+        filterAll: 'All Channels (11)',
+        filterAcademic: 'Academic & Research',
+        filterDirect: 'Direct Contact',
+        filterSocial: 'Social Networks',
+        footOrg: "People's Democratic Republic of Algeria",
+        footSub: 'University of Sciences and Technology Houari Boumediene (USTHB) • TECHINNOV Incubator'
+      }
+    };
+
+    function applyLanguage(lang) {
+      const data = translations[lang] || translations.ar;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = data.dir;
+
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.textContent = val;
+      };
+      const setHtml = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.innerHTML = val;
+      };
+
+      setTxt('preloader-text', data.preloader);
+      setTxt('txt-republic-ar', data.republicAr);
+      setTxt('txt-republic-en', data.republicEn);
+      setTxt('txt-org-title', data.orgTitle);
+      setTxt('txt-org-sub', data.orgSub);
+      setHtml('txt-pillars-pill', data.pillarsPill);
+      setTxt('txt-badge-status', data.badgeStatus);
+      setTxt('txt-person-name-ar', data.personNameAr);
+      setTxt('txt-person-name-en', data.personNameEn);
+      setTxt('txt-person-title', data.personTitle);
+      setTxt('txt-banner-title', data.bannerTitle);
+      setTxt('txt-banner-sub', data.bannerSub);
+      setTxt('txt-beacon-status', data.beaconStatus);
+
+      setTxt('txt-bio-heading', data.bioHeading);
+      setTxt('txt-bio-desc', data.bioDesc);
+      setTxt('lbl-metric-1', data.metric1);
+      setTxt('lbl-metric-2', data.metric2);
+      setTxt('lbl-metric-3', data.metric3);
+      setTxt('lbl-metric-4', data.metric4);
+      setTxt('txt-comp-title', data.compTitle);
+
+      setTxt('btn-save-contact', data.btnSaveContact);
+      setTxt('btn-top-whatsapp-txt', data.btnTopWhatsApp);
+      setTxt('btn-qr-card-txt', data.btnQrCard);
+      setTxt('btn-share-profile', data.btnShareProfile);
+
+      setTxt('txt-channels-heading', data.channelsHeading);
+      setTxt('badge-wa', data.badgeWa);
+      setTxt('lbl-ch-usthb', data.chUsthb);
+      setTxt('lbl-ch-gmail', data.chGmail);
+
+      setTxt('filter-tab-all', data.filterAll);
+      setTxt('filter-tab-academic', data.filterAcademic);
+      setTxt('filter-tab-direct', data.filterDirect);
+      setTxt('filter-tab-social', data.filterSocial);
+
+      setTxt('txt-qr-modal-name', data.qrModalName);
+      setTxt('txt-qr-modal-title', data.qrModalTitle);
+      setTxt('txt-qr-hint', data.qrHint);
+      setTxt('txt-qr-btn-vcard', data.qrBtnVcard);
+      setTxt('txt-qr-btn-copy', data.qrBtnCopy);
+
+      setTxt('txt-cred-title', data.credTitle);
+      setTxt('lbl-full-name', data.lblFullName);
+      setTxt('val-full-name', data.valFullName);
+      setTxt('lbl-role', data.lblRole);
+      setTxt('val-role', data.valRole);
+      setTxt('lbl-pos', data.lblPos);
+      setTxt('val-pos', data.valPos);
+      setTxt('lbl-inst', data.lblInst);
+      setTxt('val-inst', data.valInst);
+      setTxt('lbl-field', data.lblField);
+      setTxt('val-field', data.valField);
+      setTxt('lbl-prev', data.lblPrev);
+      setTxt('val-prev', data.valPrev);
+      setTxt('lbl-orcid', data.lblOrcid);
+      setTxt('lbl-impact', data.lblImpact);
+      setTxt('val-impact', data.valImpact);
+
+      setTxt('txt-pillars-heading', data.pillarsHeading);
+      setTxt('txt-p1-title', data.p1Title);
+      setTxt('txt-p1-desc', data.p1Desc);
+      setTxt('txt-p2-title', data.p2Title);
+      setTxt('txt-p2-desc', data.p2Desc);
+      setTxt('txt-p3-title', data.p3Title);
+      setTxt('txt-p3-desc', data.p3Desc);
+
+      setTxt('txt-foot-org', data.footOrg);
+      setTxt('txt-foot-sub', data.footSub);
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyLanguage(btn.dataset.lang);
+      });
+    });
+  </script>
+</body>
+</html>
